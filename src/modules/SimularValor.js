@@ -47,8 +47,8 @@ export default class SimularValores {
   handleClick(event) {
     event.preventDefault();
     this.dadosFetch().then((dadosJson) => {
-      const select1 = this.form[0].value.toLowerCase().trim();
-      const select2 = this.form[1].value.toLowerCase().trim();
+      const select1 = this.form[0].value.toLowerCase().trim().replace(/-/g, ' ');
+      const select2 = this.form[1].value.toLowerCase().trim().replace(/-/g, ' ');
 
       let value = null;
       console.log(select1, select2);
