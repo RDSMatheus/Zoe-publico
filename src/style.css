@@ -1,0 +1,17 @@
+@import "../dist/assets/css/cores.css";
+@import "../dist/assets/css/geral.css";
+@import "../dist/assets/css/nav.css";
+@import "../dist/assets/css/componentes.css";
+@import "../dist/assets/css/tipografia.css";
+@import "../dist/assets/css/keyframes.css";
+
+@import "../dist/assets/css/home.css";
+@import "../dist/assets/css/cadastro.css";
+@import "../dist/assets/css/footer.css";
+@import "../dist/assets/css/rastreio.css";
+@import "../dist/assets/css/rastreio-container.css";
+@import "../dist/assets/css/valores.css";
+@import "../dist/assets/css/menu-mobile.css";
+@import "../dist/assets/css/slide-in.css";
+@import "../dist/assets/css/termos.css";
+

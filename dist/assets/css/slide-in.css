@@ -1,0 +1,63 @@
+[data-anime]{
+  opacity: 0;
+}
+
+[data-anime='slide-down'].ativo{
+  animation: slideDown .5s forwards;
+}
+
+[data-anime='slide-up'].ativo{
+  animation: slideUp .5s forwards;
+}
+
+[data-anime='slide-left'].ativo{
+  animation: slideLeft .5s forwards;
+}
+
+[data-anime='slide-right'].ativo{
+  animation: slideRight .5s forwards;
+}
+
+@keyframes slideUp {
+  from{
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0 , 0);
+  }
+}
+
+@keyframes slideDown {
+  from{
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0 , 0);
+  }
+}
+
+@keyframes slideLeft {
+  from{
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0 , 0);
+  }
+}
+
+@keyframes slideRight {
+  from{
+    opacity: 0;
+    transform: translate3d(50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0 , 0);
+  }
+}

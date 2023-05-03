@@ -1,0 +1,156 @@
+.cadastro{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.cadastro-titulo{
+  margin-bottom: 40px;
+}
+
+.cadastro-titulo h2{
+  margin-bottom: 20px;
+}
+
+.cadastro-endereco{
+  background-color: var(--cor-11);
+  padding: 40px 50px;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+}
+
+.cadastro-endereco h3{
+  margin-bottom: 20px;
+}
+
+.cadastro-endereco ul {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.cadastro-endereco li {
+  grid-column: 2/-1;
+}
+
+.cadastro-redes{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cadastro-form{
+  background-color: var(--cor-00);
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+  position: relative;
+  display: grid;
+}
+
+.cadastro-form h3{
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.cadastro-form h3::before{
+  content: url("../img/detalhe.svg");
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: -45px;
+  top: -45px;
+}
+
+.cadastro-item{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  gap: 30px;
+}
+
+.cadastro-item[data-fazer-pedido]{
+  display: none;
+}
+
+.cadastro-item.ativo{
+  display: grid;
+  animation: animeLeft .3s forwards;
+  margin-bottom: 40px;
+}
+
+.cadastro-nav{
+  position: absolute;
+  bottom: 20px;
+  display: flex; 
+  place-self: center;
+  padding: 20px;
+}
+
+.cadastro-nav-item span{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--cor-p5);
+  opacity: .5;
+  display: block;
+  margin: 10px;
+  scale: .5;
+}
+.cadastro-nav-item.ativo span{
+  scale: 1;
+  background-color: var(--cor-p1);
+  opacity: 1;
+}
+
+.confirmacao-envio{
+  display: none;
+  place-items: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.confirmacao-envio.ativo{
+  display: grid;
+}
+
+.confirmacao-envio-btn{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@keyframes animeLeft {
+  from{
+    transform: translateX(-20px);
+  }
+  to{
+    transform: initial;
+  }
+}
+
+
+@media (max-width: 700px){
+  .cadastro {
+    grid-template-columns: 1fr;
+  }
+  .cadastro-endereco{
+    padding: 20px 40px;
+    border-radius: 5px 5px 0 0;
+  }
+  .cadastro-form{
+    grid-template-columns: 1fr;
+    background-color: var(--cor-00);
+    border-radius: 0 0 5px 5px;
+  }
+  .cadastro-item{
+    grid-template-columns: 1fr;
+  }
+  .cadastro-redes{
+    justify-content: start;
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.min.css">
+  <title>ZOÉ | Rastreio</title>
+  </title>
+  <link rel="shortcut icon" href="./assets/img/detalhe-ico.ico" width="16" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preload" as="font" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap" rel="preload" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="navegacao-bg">
+    <div class="navegacao container font-1-m">
+      <a href="./index.html"><img src="./assets/img/zoe-express.svg" alt="logo zoe-express" width="100" height="50"></a>
+      <nav>
+        <button class="btn-menu-mobile" id="btn-menu-mobile"><img src="./assets/img/burger-menu.svg" alt="Menu mobile" width="50" height="50"></button>
+        <ul class="menu cor-00">
+          <li><a href="./rastreio.html">Rastreio</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+          <li><a href="./simular-valores.html">Simular Valores</a></li>
+          <li><a href="./fazer-pedido.html">Fazer Pedido</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <form class="rastreio-bg" data-form='rastreio'>
+    <div class="container rastreio font-1-l cor-02" data-anime="slide-up">
+      <label for="ratreio">Insira seu código de rastreio:</label>
+      <input type="text" id="rastreio" placeholder="ZOEXXXXXXX777">
+      <button class="btn" id="btn-rastreio">Consultar</button>
+    </div>
+  </form>
+
+  <footer class="footer-bg cor-05">
+    <div class="container footer font-2-l">
+      <div>
+        <img src="./assets/img/zoe-express.svg" alt="Logo ZOÉ" width="100" height="50">
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="./contato.html">Fale Conosco</a></li>
+          <li><a href="./rastreio.html">Rastreio</a></li>
+          <li><a href="./fazer-pedido.html">Pedidos</a></li>
+          <li><a href="./simular-valores.html">Simular Valores</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="./index.html#perguntas">Perguntas</a></li>
+          <li><a href="./termos.html">Termos</a></li>
+          <li><a href="./fazer-pedido.html">Pedidos</a></li>
+          <li><a href="./simular-valores.html">Simular Valores</a></li>
+        </ul>
+      </nav>
+      <p class="col footer-copy font-1-xs">© Copyright 2023 - ZOÉ Express</p>
+      <p class="col footer-dev font-1-xs">Front-end: Matheus | Back-end: Yuri</p>
+    </div>
+
+  </footer>
+  <div class="menu-mobile">
+    <div class="header-menu-mobile">
+      <a href="./index.html"><img src="./assets/img/zoe-express-preto.svg" alt=""></a>
+      <button class="btn-mobile-fechar" id="btn-mobile-fechar">
+        <img src="./assets/img/close-button.svg" alt="">
+      </button>
+    </div>
+    <nav>
+
+      <ul class="cor-p5 font-1-xl">
+        <li><a href="./rastreio.html">Rastreio</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+        <li><a href="./simular-valores.html">Simular Valores</a></li>
+        <li><a href="./fazer-pedido.html">Fazer Pedido</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div data-rastreio class="rastreio-modal">
+    <div class="rastreio-container" data-anime="slide-up">
+      <h3 class="font-1-xl cor-11">Confira o rastreio do seu produto.</h3>
+      <button class="btn-rastreio-fechar" id="btn-rastreio-fechar">
+        <img src="./assets/img/close-button.svg" alt="">
+      </button>
+      <ul class="rastreio-status">
+        <li><img src="./assets/img/email.svg" alt=""></li>
+        <li><img src="./assets/img/email.svg" alt=""></li>
+        <li><img src="./assets/img/email.svg" alt=""></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./bundle.js"></script>
+
+</body>
+
+</html>

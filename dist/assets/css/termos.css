@@ -1,0 +1,61 @@
+.termos-modal{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999999;
+  display: none;
+}
+
+.termos-modal.ativo{
+  display: grid;
+}
+
+.termos-container{
+  place-self: center;
+  background-color: var(--cor-02);
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(255, 187, 0, .5);
+  position: relative;
+  margin: 20px;
+}
+
+.termos-content{
+  overflow: auto;
+  max-width: 700px;
+  height: 400px;
+  background-color: var(--cor-05);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.termos-container h3,
+.termos-container h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.btn-termos-fechar{
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+
+.termos {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.termos h3,
+.termos h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
